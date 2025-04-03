@@ -1,0 +1,88 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: blue;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Container Box */
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(240, 240, 240, 0.9);
+    transition: all 0.3s ease-in-out;
+}
+
+.container input:focus {
+    border-color: #ff7eb3;
+    background: white;
+}
+
+/* Case Style Boxes */
+div {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+span{
+    margin-top: 10px;
+    color: blue;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .container input {
+        font-size: 16px;
+    }
+
+    div {
+        font-size: 16px;
+    }
+}
